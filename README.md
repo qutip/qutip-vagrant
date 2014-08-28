@@ -30,7 +30,16 @@ Logon to the VM:
     $ vagrant ssh
 
 This gives immediate access to a virtual machine with the specified versions of
-the OS and QuTiP, including all its dependencies.
+the OS and QuTiP, including all its dependencies, for both Python 2 and
+Python 3 environments.
 
 All files stored in the directory for each configuration are available in the
 VM under the directory /vagrant.
+
+When finished with the VM, it can be stopped using:
+
+    $ vagrant halt
+
+and completely deleted using:
+
+    $ vagrant destroy
