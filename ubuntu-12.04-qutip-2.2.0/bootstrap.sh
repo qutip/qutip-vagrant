@@ -14,7 +14,7 @@ VERSION=2.2.0
 
 apt-get update
 
-wget http://qutip.org/downloads/$VERSION/qutip-$VERSION.tar.gz -O /vagrant/qutip-$VERSION.tar.gz
+wget http://qutip.org/downloads/$VERSION/QuTiP-$VERSION.tar.gz -O /vagrant/qutip-$VERSION.tar.gz
 
 apt-get install -y gfortran libblas-dev liblapack-dev
 
@@ -23,11 +23,4 @@ apt-get install -y python-nose python-pip python-dev cython python-setuptools
 apt-get install -y python-numpy python-scipy python-matplotlib
 cd /tmp && tar zxfv /vagrant/qutip-$VERSION.tar.gz
 cd /tmp/qutip-$VERSION && python setup.py install --with-f90mc
-rm -rf /tmp/qutip-$VERSION
-
-# python3 environment
-apt-get install -y python3-nose python3-pip python3-dev cython3 python3-setuptools
-apt-get install -y python3-numpy python3-scipy python3-matplotlib
-cd /tmp && tar zxfv /vagrant/qutip-$VERSION.tar.gz
-cd /tmp/qutip-$VERSION && python3 setup.py install --with-f90mc
 rm -rf /tmp/qutip-$VERSION
