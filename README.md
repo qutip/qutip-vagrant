@@ -3,6 +3,14 @@ Vagrant environments for QuTiP
 
 Vagrant VMs with a pre-configured QuTiP environments.
 
+Prerequisites
+-------------
+
+The only requirement is that [vagrant](https://www.vagrantup.com/) is installed
+on the host machine. In Ubuntu, the installation of vagrant is as easy as:
+
+    $ sudo apt-get install vagrant
+
 Usage
 -----
 
@@ -21,8 +29,8 @@ Logon to the VM:
 
     $ vagrant ssh
 
-This gives immediate access to a virtual ubuntu 14.04 OS with QuTiP 3.0.1
-and all its dependencies.
+This gives immediate access to a virtual machine with the specified versions of
+the OS and QuTiP, including all its dependencies.
 
-All files stored in the directory form where the "vagrant up" and "vagrant ssh" 
-are ran are available in the VM under the directory /vagrant.
+All files stored in the directory for each configuration are available in the
+VM under the directory /vagrant.
